@@ -1,5 +1,53 @@
 [
   {
+    "name": "Air Elemental",
+    "type": "elemental",
+    "size": "Large",
+    "hp": 90,
+    "roll": "12d10 + 24",
+    "ac": 15,
+    "speed": 0,
+    "fly": 90,
+    "flyDetails": "hover",
+    "str": 14,
+    "dex": 20,
+    "con": 14,
+    "int": 6,
+    "wis": 10,
+    "cha": 6,
+    "resistances": "Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+    "immunities": "Poison",
+    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+    "senses": "Darkvision 60ft.",
+    "passive": 10,
+    "languages": "Auran",
+    "cr": "5 ",
+    "traits": [
+      {
+        "name": "Air Form",
+        "text": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "text": "The elemental makes two slam attacks."
+      },
+      {
+        "name": "Slam",
+        "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+      },
+      {
+        "name": "Whirlwind (Recharge 4-6)",
+        "text": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\n\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone."
+      }
+    ],
+    "environments": [
+      "Desert",
+      "Mountain"
+    ]
+  },
+  {
     "name": "Allosaurus",
     "size": "Large",
     "hp": 60,
@@ -33,7 +81,9 @@
         "attack": "Claw|6|1d8+4"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": [
+      "Grassland"
+    ]
   },
   {
     "name": "Ankylosaurus",
@@ -56,7 +106,9 @@
         "text": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
       }
     ],
-    "environments": ["Grassland"]
+    "environments": [
+      "Grassland"
+    ]
   },
   {
     "name": "Ape",
@@ -91,7 +143,49 @@
         "attack": "Rock|5|1d6+3"
       }
     ],
-    "environments": ["Forest"]
+    "environments": [
+      "Forest"
+    ]
+  },
+  {
+    "name": "Archelon",
+    "size": "Huge",
+    "ac": 17,
+    "hp": 90,
+    "roll": "12d12+12",
+    "speed": 20,
+    "swim": 80,
+    "str": 18,
+    "dex": 16,
+    "con": 13,
+    "int": 4,
+    "wis": 14,
+    "cha": 6,
+    "passive": 12,
+    "cr": "4",
+    "skills": "Stealth +5",
+    "senses": "Passive Perception 12",
+    "languages": "None",
+    "traits": [
+      {
+        "name": "Amphibious",
+        "text": "The archelon can breathe air and water."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "text": "The archelon makes two Bite attacks."
+      },
+      {
+        "name": "Bite",
+        "text": "Melee Attack Roll: +6, reach 5 ft. Hit: 14 (3d6 + 4) Piercing damage."
+      }
+    ],
+    "environments": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "name": "Axe Beak",
@@ -115,7 +209,10 @@
         "attack": "Beak|4|1d8+2"
       }
     ],
-    "environments": ["Grassland", "Hill"]
+    "environments": [
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Baboon",
@@ -146,7 +243,10 @@
         "attack": "Bite|1|1d4-1"
       }
     ],
-    "environments": ["Forest", "Hill"]
+    "environments": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "name": "Badger",
@@ -178,7 +278,9 @@
         "attack": "Bite|2|1"
       }
     ],
-    "environments": ["Forest"]
+    "environments": [
+      "Forest"
+    ]
   },
   {
     "name": "Bat",
@@ -254,7 +356,9 @@
         "attack": "Claws|3|2d4+2"
       }
     ],
-    "environments": ["Forest"]
+    "environments": [
+      "Forest"
+    ]
   },
   {
     "name": "Blood Hawk",
@@ -290,7 +394,14 @@
         "attack": "Beak|4|1d4+2"
       }
     ],
-    "environments": ["Arctic", "Coastal", "Forest", "Grassland", "Hill", "Mountain"]
+    "environments": [
+      "Arctic",
+      "Coastal",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "name": "Boar",
@@ -325,7 +436,11 @@
         "attack": "Tusk|3|1d6+1"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Brown Bear",
@@ -366,7 +481,11 @@
         "attack": "Claws|5|2d6+4"
       }
     ],
-    "environments": ["Arctic", "Forest", "Hill"]
+    "environments": [
+      "Arctic",
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "name": "Camel",
@@ -390,7 +509,9 @@
         "attack": "Bite|5|1d4"
       }
     ],
-    "environments": ["Desert"]
+    "environments": [
+      "Desert"
+    ]
   },
   {
     "name": "Cat",
@@ -422,7 +543,12 @@
         "attack": "Claws||1"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Urban"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "name": "Cave Bear",
@@ -495,7 +621,12 @@
         "attack": "Constrict|4|1d8+2"
       }
     ],
-    "environments": ["Desert", "Forest", "Swamp", "Underwater"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underwater"
+    ]
   },
   {
     "name": "Crab",
@@ -528,7 +659,9 @@
         "attack": "Claw||1"
       }
     ],
-    "environments": ["Coastal"]
+    "environments": [
+      "Coastal"
+    ]
   },
   {
     "name": "Crocodile",
@@ -560,7 +693,10 @@
         "attack": "Bite|4|1d10+2"
       }
     ],
-    "environments": ["Swamp", "Urban"]
+    "environments": [
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "name": "Deer",
@@ -584,7 +720,10 @@
         "attack": "Bite|2|1d4"
       }
     ],
-    "environments": ["Forest", "Grassland"]
+    "environments": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "name": "Dire Wolf",
@@ -619,7 +758,10 @@
         "attack": "Bite|5|2d6+3"
       }
     ],
-    "environments": ["Forest", "Hill"]
+    "environments": [
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "name": "Draft Horse",
@@ -643,7 +785,9 @@
         "attack": "Hooves|6|2d4+4"
       }
     ],
-    "environments": ["Urban"]
+    "environments": [
+      "Urban"
+    ]
   },
   {
     "name": "Eagle",
@@ -675,7 +819,59 @@
         "attack": "Talons|4|1d4+2"
       }
     ],
-    "environments": ["Coastal", "Grassland", "Hill", "Mountain"]
+    "environments": [
+      "Coastal",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
+  },
+  {
+    "name": "Earth Elemental",
+    "type": "elemental",
+    "size": "Large",
+    "hp": 126,
+    "roll": "12d10 + 60",
+    "ac": 17,
+    "speed": 30,
+    "burrow": 30,
+    "str": 20,
+    "dex": 8,
+    "con": 20,
+    "int": 5,
+    "wis": 10,
+    "cha": 5,
+    "vulnerabilities": "Thunder",
+    "resistances": "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+    "immunities": "Poison",
+    "conditionImmunities": "Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious",
+    "senses": "Darkvision 60 ft., Tremorsense 60 ft",
+    "passive": 10,
+    "languages": "Terran",
+    "cr": "5 ",
+    "traits": [
+      {
+        "name": "Earth Glide",
+        "text": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
+      },
+      {
+        "name": "Siege Monster",
+        "text": "The elemental deals double damage to objects and structures."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "text": "The elemental makes two slam attacks."
+      },
+      {
+        "name": "Slam",
+        "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+      }
+    ],
+    "environments": [
+      "Underdark"
+    ]
   },
   {
     "name": "Elephant",
@@ -710,7 +906,9 @@
         "attack": "Stomp|8|3d10+5"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": [
+      "Grassland"
+    ]
   },
   {
     "name": "Elk",
@@ -744,7 +942,60 @@
         "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one prone creature. Hit: 8 (2d4 + 3) bludgeoning damage."
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
+  },
+  {
+    "name": "Fire Elemental",
+    "type": "elemental",
+    "size": "Large",
+    "hp": 102,
+    "roll": "12d10 + 36",
+    "ac": 13,
+    "speed": 50,
+    "str": 10,
+    "dex": 17,
+    "con": 16,
+    "int": 6,
+    "wis": 10,
+    "cha": 7,
+    "resistances": "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+    "immunities": "Fire, Poison",
+    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+    "senses": "Darkvision 60 ft.",
+    "passive": 10,
+    "languages": "Ignan",
+    "cr": "5 ",
+    "traits": [
+      {
+        "name": "Fire Form",
+        "text": "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns."
+      },
+      {
+        "name": "Illumination",
+        "text": "The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet."
+      },
+      {
+        "name": "Water Susceptibility",
+        "text": "For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "text": "The elemental makes two touch attacks."
+      },
+      {
+        "name": "Touch",
+        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
+      }
+    ],
+    "environments": [
+      "Desert"
+    ]
   },
   {
     "name": "Flying Snake",
@@ -777,7 +1028,12 @@
         "attack": "Bite|6|1"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Urban"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "name": "Frog",
@@ -848,7 +1104,9 @@
         "attack": "Claws|3|2d4+1"
       }
     ],
-    "environments": ["Forest"]
+    "environments": [
+      "Forest"
+    ]
   },
   {
     "name": "Giant Bat",
@@ -884,7 +1142,10 @@
         "attack": "Bite|4|1d6+2"
       }
     ],
-    "environments": ["Forest", "Underdark"]
+    "environments": [
+      "Forest",
+      "Underdark"
+    ]
   },
   {
     "name": "Giant Boar",
@@ -919,7 +1180,11 @@
         "attack": "Tusk|5|2d6+3"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Giant Centipede",
@@ -945,7 +1210,10 @@
         "attack": "Bite|4|1d4+2"
       }
     ],
-    "environments": ["Underdark", "Urban"]
+    "environments": [
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "name": "Giant Constrictor Snake",
@@ -977,7 +1245,13 @@
         "attack": "Constrict|6|2d8+4"
       }
     ],
-    "environments": ["Desert", "Forest", "Swamp", "Underdark", "Underwater"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark",
+      "Underwater"
+    ]
   },
   {
     "name": "Giant Crab",
@@ -1010,7 +1284,9 @@
         "attack": "Claw|3|1d6+1"
       }
     ],
-    "environments": ["Coastal"]
+    "environments": [
+      "Coastal"
+    ]
   },
   {
     "name": "Giant Crocodile",
@@ -1051,7 +1327,9 @@
         "attack": "Tail|8|2d8+5"
       }
     ],
-    "environments": ["Swamp"]
+    "environments": [
+      "Swamp"
+    ]
   },
   {
     "name": "Giant Eagle",
@@ -1092,7 +1370,12 @@
         "attack": "Talons|5|2d6+3"
       }
     ],
-    "environments": ["Coastal", "Grassland", "Hill", "Mountain"]
+    "environments": [
+      "Coastal",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "name": "Giant Elk",
@@ -1129,7 +1412,12 @@
         "attack": "Hooves|6|4d8+4"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill", "Mountain"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "name": "Giant Fire Beetle",
@@ -1160,7 +1448,9 @@
         "attack": "Bite|1|1d6-1"
       }
     ],
-    "environments": ["Underdark"]
+    "environments": [
+      "Underdark"
+    ]
   },
   {
     "name": "Giant Fly",
@@ -1220,7 +1510,10 @@
         "text": "The frog makes one bite attack against a Small or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the frog, and it takes 5 (2d4) acid damage at the start of each of the frog's turns. The frog can have only one target swallowed at a time. If the frog dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 ft. of movement, exiting prone."
       }
     ],
-    "environments": ["Forest", "Swamp"]
+    "environments": [
+      "Forest",
+      "Swamp"
+    ]
   },
   {
     "name": "Giant Goat",
@@ -1255,7 +1548,11 @@
         "attack": "Ram|5|2d4+3"
       }
     ],
-    "environments": ["Grassland", "Hill", "Mountain"]
+    "environments": [
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "name": "Giant Hyena",
@@ -1286,7 +1583,12 @@
         "attack": "Bite|5|1d6+3"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Hill"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Giant Lizard",
@@ -1322,7 +1624,13 @@
         "attack": "Bite|4|1d8+2"
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Swamp", "Underdark"]
+    "environments": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "name": "Giant Octopus",
@@ -1367,7 +1675,9 @@
         "text": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Giant Owl",
@@ -1404,7 +1714,11 @@
         "attack": "Talons|3|2d6+1"
       }
     ],
-    "environments": ["Arctic", "Forest", "Hill"]
+    "environments": [
+      "Arctic",
+      "Forest",
+      "Hill"
+    ]
   },
   {
     "name": "Giant Poisonous Snake",
@@ -1431,7 +1745,14 @@
         "attack": "Bite|6|1d4+4"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Swamp", "Underdark", "Urban"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "name": "Giant Rat",
@@ -1466,7 +1787,12 @@
         "attack": "Bite|4|1d4+2"
       }
     ],
-    "environments": ["Forest", "Swamp", "Underdark", "Urban"]
+    "environments": [
+      "Forest",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "name": "Giant Rat (Diseased)",
@@ -1525,7 +1851,9 @@
         "attack": "Sting|4|1d10+2"
       }
     ],
-    "environments": ["Desert"]
+    "environments": [
+      "Desert"
+    ]
   },
   {
     "name": "Giant Sea Horse",
@@ -1561,7 +1889,9 @@
         "attack": "|3|1d6+1"
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Giant Shark",
@@ -1598,7 +1928,9 @@
         "attack": "Bite|9|3d10+6"
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Giant Spider",
@@ -1644,7 +1976,13 @@
         "attack": "Web|5|0"
       }
     ],
-    "environments": ["Desert", "Forest", "Swamp", "Underdark", "Urban"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark",
+      "Urban"
+    ]
   },
   {
     "name": "Giant Toad",
@@ -1684,7 +2022,13 @@
         "text": "The toad makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed target is blinded and restrained, it has total cover against attacks and other effects outside the toad, and it takes 10 (3d6) acid damage at the start of each of the toad's turns. The toad can have only one target swallowed at a time.\nIf the toad dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone."
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Swamp", "Underdark"]
+    "environments": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Swamp",
+      "Underdark"
+    ]
   },
   {
     "name": "Giant Vulture",
@@ -1729,7 +2073,10 @@
         "attack": "Talons|4|2d6+2"
       }
     ],
-    "environments": ["Desert", "Grassland"]
+    "environments": [
+      "Desert",
+      "Grassland"
+    ]
   },
   {
     "name": "Giant Wasp",
@@ -1754,7 +2101,11 @@
         "attack": "Sting|4|1d6+2"
       }
     ],
-    "environments": ["Forest", "Grassland", "Urban"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "name": "Giant Weasel",
@@ -1786,7 +2137,11 @@
         "attack": "Bite|5|1d4+3"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Giant Wolf Spider",
@@ -1827,7 +2182,13 @@
         "attack": "Bite|3|1d6+1"
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Grassland", "Hill"]
+    "environments": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Goat",
@@ -1862,7 +2223,12 @@
         "attack": "Ram|3|1d4+1"
       }
     ],
-    "environments": ["Grassland", "Hill", "Mountain", "Urban"]
+    "environments": [
+      "Grassland",
+      "Hill",
+      "Mountain",
+      "Urban"
+    ]
   },
   {
     "name": "Hawk",
@@ -1930,7 +2296,9 @@
         "attack": "Bite|6|2d8+4"
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Hyena",
@@ -1961,7 +2329,12 @@
         "attack": "Bite|2|1d6"
       }
     ],
-    "environments": ["Desert", "Forest", "Grassland", "Hill"]
+    "environments": [
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Jackal",
@@ -1996,7 +2369,10 @@
         "attack": "Bite|1|1d4-1"
       }
     ],
-    "environments": ["Desert", "Grassland"]
+    "environments": [
+      "Desert",
+      "Grassland"
+    ]
   },
   {
     "name": "Killer Whale",
@@ -2035,7 +2411,9 @@
         "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage."
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Lion",
@@ -2083,7 +2461,12 @@
         "attack": "Claw|5|1d6+3"
       }
     ],
-    "environments": ["Desert", "Grassland", "Hill", "Mountain"]
+    "environments": [
+      "Desert",
+      "Grassland",
+      "Hill",
+      "Mountain"
+    ]
   },
   {
     "name": "Lizard",
@@ -2144,7 +2527,9 @@
         "attack": "Stomp|10|4d10+7"
       }
     ],
-    "environments": ["Arctic"]
+    "environments": [
+      "Arctic"
+    ]
   },
   {
     "name": "Mastiff",
@@ -2175,7 +2560,11 @@
         "attack": "Bite|3|1d6+1"
       }
     ],
-    "environments": ["Forest", "Hill", "Urban"]
+    "environments": [
+      "Forest",
+      "Hill",
+      "Urban"
+    ]
   },
   {
     "name": "Mule",
@@ -2209,7 +2598,11 @@
         "attack": "Hooves|4|1d4+2"
       }
     ],
-    "environments": ["Desert", "Hill", "Urban"]
+    "environments": [
+      "Desert",
+      "Hill",
+      "Urban"
+    ]
   },
   {
     "name": "Octopus",
@@ -2254,7 +2647,9 @@
         "text": "A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Owl",
@@ -2291,7 +2686,10 @@
         "attack": "Talons|3|1"
       }
     ],
-    "environments": ["Arctic", "Forest"]
+    "environments": [
+      "Arctic",
+      "Forest"
+    ]
   },
   {
     "name": "Panther",
@@ -2332,7 +2730,11 @@
         "attack": "Claw|4|1d4+2"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Plesiosaurus",
@@ -2364,7 +2766,10 @@
         "attack": "Bite|6|3d6+4"
       }
     ],
-    "environments": ["Coastal", "Underwater"]
+    "environments": [
+      "Coastal",
+      "Underwater"
+    ]
   },
   {
     "name": "Poisonous Snake",
@@ -2390,7 +2795,14 @@
         "attack": "Bite|5|1"
       }
     ],
-    "environments": ["Coastal", "Desert", "Forest", "Grassland", "Hill", "Swamp"]
+    "environments": [
+      "Coastal",
+      "Desert",
+      "Forest",
+      "Grassland",
+      "Hill",
+      "Swamp"
+    ]
   },
   {
     "name": "Polar Bear",
@@ -2431,7 +2843,10 @@
         "attack": "Claws|7|2d6+5"
       }
     ],
-    "environments": ["Arctic", "Underdark"]
+    "environments": [
+      "Arctic",
+      "Underdark"
+    ]
   },
   {
     "name": "Pony",
@@ -2455,7 +2870,9 @@
         "attack": "Hooves|4|2d4+2"
       }
     ],
-    "environments": ["Urban"]
+    "environments": [
+      "Urban"
+    ]
   },
   {
     "name": "Pteranodon",
@@ -2486,7 +2903,11 @@
         "text": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage"
       }
     ],
-    "environments": ["Coastal", "Grassland", "Mountain"]
+    "environments": [
+      "Coastal",
+      "Grassland",
+      "Mountain"
+    ]
   },
   {
     "name": "Quipper",
@@ -2521,7 +2942,9 @@
         "attack": "Bite|5|1"
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Rat",
@@ -2552,7 +2975,10 @@
         "attack": "Bite||1"
       }
     ],
-    "environments": ["Swamp", "Urban"]
+    "environments": [
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "name": "Raven",
@@ -2583,7 +3009,11 @@
         "text": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
       }
     ],
-    "environments": ["Hill", "Swamp", "Urban"]
+    "environments": [
+      "Hill",
+      "Swamp",
+      "Urban"
+    ]
   },
   {
     "name": "Reef Shark",
@@ -2619,7 +3049,9 @@
         "attack": "Bite|4|1d8+2"
       }
     ],
-    "environments": ["Underwater"]
+    "environments": [
+      "Underwater"
+    ]
   },
   {
     "name": "Rhinoceros",
@@ -2650,7 +3082,9 @@
         "attack": "Gore|7|2d8+5"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": [
+      "Grassland"
+    ]
   },
   {
     "name": "Riding Horse",
@@ -2674,7 +3108,10 @@
         "attack": "Hooves|2|2d4+3"
       }
     ],
-    "environments": ["Grassland", "Urban"]
+    "environments": [
+      "Grassland",
+      "Urban"
+    ]
   },
   {
     "name": "Saber-Toothed Tiger",
@@ -2714,7 +3151,10 @@
         "attack": "Claw|6|2d6+5"
       }
     ],
-    "environments": ["Arctic", "Mountain"]
+    "environments": [
+      "Arctic",
+      "Mountain"
+    ]
   },
   {
     "name": "Scorpion",
@@ -2739,7 +3179,9 @@
         "attack": "Sting|2|1"
       }
     ],
-    "environments": ["Desert"]
+    "environments": [
+      "Desert"
+    ]
   },
   {
     "name": "Sea Horse",
@@ -2879,7 +3321,10 @@
         "text": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
       }
     ],
-    "environments": ["Forest", "Grassland"]
+    "environments": [
+      "Forest",
+      "Grassland"
+    ]
   },
   {
     "name": "Triceratops",
@@ -2914,7 +3359,9 @@
         "attack": "Stomp|9|3d10+6"
       }
     ],
-    "environments": ["Grassland"]
+    "environments": [
+      "Grassland"
+    ]
   },
   {
     "name": "Vulture",
@@ -2950,7 +3397,11 @@
         "attack": "Beak|2|1d4"
       }
     ],
-    "environments": ["Desert", "Grassland", "Hill"]
+    "environments": [
+      "Desert",
+      "Grassland",
+      "Hill"
+    ]
   },
   {
     "name": "Warhorse",
@@ -2980,7 +3431,61 @@
         "attack": "|4|2d6+4"
       }
     ],
-    "environments": ["Urban"]
+    "environments": [
+      "Urban"
+    ]
+  },
+  {
+    "name": "Water Elemental",
+    "type": "elemental",
+    "size": "Large",
+    "hp": 114,
+    "roll": "12d10 + 48",
+    "ac": 14,
+    "speed": 30,
+    "swim": 90,
+    "str": 18,
+    "dex": 14,
+    "con": 18,
+    "int": 5,
+    "wis": 10,
+    "cha": 8,
+    "resistances": "Acid; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+    "immunities": "Poison",
+    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
+    "senses": "Darkvision 60 ft.",
+    "passive": 10,
+    "languages": "Aquan",
+    "cr": "5 ",
+    "traits": [
+      {
+        "name": "Water Form",
+        "text": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+      },
+      {
+        "name": "Freeze",
+        "text": "If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "text": "The elemental makes two slam attacks."
+      },
+      {
+        "name": "Slam",
+        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+      },
+      {
+        "name": "Whelm (Recharge 4\u20136)",
+        "text": "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.\n\nThe elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding."
+      }
+    ],
+    "environments": [
+      "Coastal",
+      "Swamp",
+      "Underwater"
+    ]
   },
   {
     "name": "Weasel",
@@ -3046,191 +3551,10 @@
         "attack": "Bite|4|2d4+2"
       }
     ],
-    "environments": ["Forest", "Grassland", "Hill"]
-  },
-  {
-    "name": "Air Elemental",
-    "type": "elemental",
-    "size": "Large",
-    "hp": 90,
-    "roll": "12d10 + 24",
-    "ac": 15,
-    "speed": 0,
-    "fly": 90,
-    "flyDetails": "hover",
-    "str": 14,
-    "dex": 20,
-    "con": 14,
-    "int": 6,
-    "wis": 10,
-    "cha": 6,
-    "resistances": "Lightning, Thunder; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Poison",
-    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
-    "senses": "Darkvision 60ft.",
-    "passive": 10,
-    "languages": "Auran",
-    "cr": "5 ",
-    "traits": [
-      {
-        "name": "Air Form",
-        "text": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
-      }
-    ],
-    "actions": [
-      {
-        "name": "Multiattack",
-        "text": "The elemental makes two slam attacks."
-      },
-      {
-        "name": "Slam",
-        "text": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
-      },
-      {
-        "name": "Whirlwind (Recharge 4-6)",
-        "text": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\n\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone."
-      }
-    ],
-    "environments": ["Desert", "Mountain"]
-  },
-  {
-    "name": "Earth Elemental",
-    "type": "elemental",
-    "size": "Large",
-    "hp": 126,
-    "roll": "12d10 + 60",
-    "ac": 17,
-    "speed": 30,
-    "burrow": 30,
-    "str": 20,
-    "dex": 8,
-    "con": 20,
-    "int": 5,
-    "wis": 10,
-    "cha": 5,
-    "vulnerabilities": "Thunder",
-    "resistances": "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Poison",
-    "conditionImmunities": "Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious",
-    "senses": "Darkvision 60 ft., Tremorsense 60 ft",
-    "passive": 10,
-    "languages": "Terran",
-    "cr": "5 ",
-    "traits": [
-      {
-        "name": "Earth Glide",
-        "text": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through."
-      },
-      {
-        "name": "Siege Monster",
-        "text": "The elemental deals double damage to objects and structures."
-      }
-    ],
-    "actions": [
-      {
-        "name": "Multiattack",
-        "text": "The elemental makes two slam attacks."
-      },
-      {
-        "name": "Slam",
-        "text": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
-      }
-    ],
-    "environments": ["Underdark"]
-  },
-  {
-    "name": "Fire Elemental",
-    "type": "elemental",
-    "size": "Large",
-    "hp": 102,
-    "roll": "12d10 + 36",
-    "ac": 13,
-    "speed": 50,
-    "str": 10,
-    "dex": 17,
-    "con": 16,
-    "int": 6,
-    "wis": 10,
-    "cha": 7,
-    "resistances": "Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Fire, Poison",
-    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
-    "senses": "Darkvision 60 ft.",
-    "passive": 10,
-    "languages": "Ignan",
-    "cr": "5 ",
-    "traits": [
-      {
-        "name": "Fire Form",
-        "text": "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 5 (1d10) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns."
-      },
-      {
-        "name": "Illumination",
-        "text": "The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet."
-      },
-      {
-        "name": "Water Susceptibility",
-        "text": "For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
-      }
-    ],
-    "actions": [
-      {
-        "name": "Multiattack",
-        "text": "The elemental makes two touch attacks."
-      },
-      {
-        "name": "Touch",
-        "text": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
-      }
-    ],
-    "environments": ["Desert"]
-  },
-  {
-    "name": "Water Elemental",
-    "type": "elemental",
-    "size": "Large",
-    "hp": 114,
-    "roll": "12d10 + 48",
-    "ac": 14,
-    "speed": 30,
-    "swim": 90,
-    "str": 18,
-    "dex": 14,
-    "con": 18,
-    "int": 5,
-    "wis": 10,
-    "cha": 8,
-    "resistances": "Acid; Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
-    "immunities": "Poison",
-    "conditionImmunities": "Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious",
-    "senses": "Darkvision 60 ft.",
-    "passive": 10,
-    "languages": "Aquan",
-    "cr": "5 ",
-    "traits": [
-      {
-        "name": "Water Form",
-        "text": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
-      },
-      {
-        "name": "Freeze",
-        "text": "If the elemental takes cold damage, it partially freezes; its speed is reduced by 20 feet until the end of its next turn."
-      }
-    ],
-    "actions": [
-      {
-        "name": "Multiattack",
-        "text": "The elemental makes two slam attacks."
-      },
-      {
-        "name": "Slam",
-        "text": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
-      },
-      {
-        "name": "Whelm (Recharge 4–6)",
-        "text": "Each creature in the elemental's space must make a DC 15 Strength saving throw. On a failure, a target takes 13 (2d8 + 4) bludgeoning damage. If it is Large or smaller, it is also grappled (escape DC 14). Until this grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental's space.\n\nThe elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of each of the elemental's turns, each target grappled by it takes 13 (2d8 + 4) bludgeoning damage. A creature within 5 feet of the elemental can pull a creature or object out of it by taking an action to make a DC 14 Strength and succeeding."
-      }
-    ],
-    "environments": ["Coastal", "Swamp", "Underwater"]
+    "environments": [
+      "Forest",
+      "Grassland",
+      "Hill"
+    ]
   }
 ]
